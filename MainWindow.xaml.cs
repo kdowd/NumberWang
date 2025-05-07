@@ -16,7 +16,7 @@ namespace NumberWang
 
     public partial class MainWindow : Window
     {
-        // to stop compiler complaing make if readonly 
+        // to stop compiler complaing make it readonly 
         readonly NumberGame GAME;
 
         public MainWindow()

@@ -100,7 +100,7 @@ namespace NumberWang.Classes
 
             if (Attempts >= Max_Attempts)
             {
-                ShowLoser();
+                showNewGameGUI();
                 return;
             }
 
@@ -121,7 +121,7 @@ namespace NumberWang.Classes
             }
         }
 
-        private void ShowLoser()
+        private void showNewGameGUI()
         {
             FeedBackTextBox!.Text = "Hombre! you're dead.";
             ShowGameButtons();
@@ -165,7 +165,7 @@ namespace NumberWang.Classes
             else
             {
                 FeedBackTextBox!.Text = $"Well Done. Number was {_SecretNumber}.";
-                ClearAttempts();
+                ClearAttempts(); ShowGameButtons();
             }
         }
 
